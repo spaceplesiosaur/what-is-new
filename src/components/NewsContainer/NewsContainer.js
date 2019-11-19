@@ -7,6 +7,8 @@ class NewsContainer extends React.Component {
   //   super(props);
   // }
   renderNewsArticles() {
+    // console.log(this.props.articleList)
+    // return null
     return this.props.articleList.map((article, i) => {
       return (
         <NewsArticle
