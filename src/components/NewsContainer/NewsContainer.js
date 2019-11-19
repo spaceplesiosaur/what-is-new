@@ -1,6 +1,10 @@
 import React from 'react';
 import './NewsContainer.css'
 
-// NEWSCONTAINER COMPONENT CODE GOES HERE
+class NewsContainer extends React.Component {
+  render() {
+    return null;
+  }
+}
 
 export default NewsContainer;
