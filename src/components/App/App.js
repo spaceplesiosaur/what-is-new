@@ -9,7 +9,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      local
+      local: local
     }
   }
 
@@ -18,10 +18,17 @@ class App extends Component {
       <div className="app">
         <SearchForm/>
         <Menu/>
-        <NewsContainer/>
+        <NewsContainer
+        articleList={this.state.local}
+        // id={this.state.name}
+        // img={this.state.image}
+        // description={this.state.description}
+        // url={this.state.url}
+        />
       </div>
     );
   }
 }
+
 
 export default App;
