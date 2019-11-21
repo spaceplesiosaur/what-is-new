@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import local from '../../data/local';
-import entertainment from '../../data/entertainment';
-import health from '../../data/health';
-import science from '../../data/science';
-import technology from '../../data/technology';
+// import local from '../../data/local';
+// import entertainment from '../../data/entertainment';
+// import health from '../../data/health';
+// import science from '../../data/science';
+// import technology from '../../data/technology';
 import './App.css';
 import SearchForm from '../SearchForm/SearchForm.js';
 import Menu from '../Menu/Menu.js';
@@ -13,19 +13,36 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      topic: local,
+      // data: {},
+      topic: [],
+      // topic: local,
+      // menu:
+      //   [
+      //     {name: 'Local News', image: '/favicon.ico', id: local},
+      //     {name: 'Technology', image: '/favicon.ico', id: technology},
+      //     {name: 'Entertainment', image: '/favicon.ico', id: entertainment},
+      //     {name: 'Science', image: '/favicon.ico', id: science},
+      //     {name: 'Health', image: '/favicon.ico', id: health}
+      //   ]
       menu:
         [
-          {name: 'Local News', image: '/favicon.ico', id: local},
-          {name: 'Technology', image: '/favicon.ico', id: technology},
-          {name: 'Entertainment', image: '/favicon.ico', id: entertainment},
-          {name: 'Science', image: '/favicon.ico', id: science},
-          {name: 'Health', image: '/favicon.ico', id: health}
+          {name: 'Entertainment', image: '/favicon.ico', id: []},
+          {name: 'Health', image: '/favicon.ico', id: []},
+          {name: 'Local News', image: '/favicon.ico', id: []},
+          {name: 'Science', image: '/favicon.ico', id: []},
+          {name: 'Technology', image: '/favicon.ico', id: []}
         ]
 
     }
   }
-
+  componentDidMount = () => {
+   fetch('https://whats-new-api.herokuapp.com/api/v1/news')
+     .then(response => response.json())
+     .then(data => this.setState({ topic: data.local, menu: this.state.menu.map((item, i) => {
+       return {name: item.name, image: item.image, id: data[Object.keys(data)[i]]}
+     })
+   }));
+ }
   setTopic = (topicId) => {
     this.setState({topic: topicId})
   }

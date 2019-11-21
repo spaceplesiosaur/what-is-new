@@ -15,15 +15,8 @@ it('should render app', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import App from './App';
+// it('should set a topic based on menu selection', () => {
+//   const app = new App();
+//   app.setTopic(entertainment)
 //
-//
-//
-// it('renders without crashing', () => {
-//   const div = document.createElement('div');
-//   ReactDOM.render(<App />, div);
-//   ReactDOM.unmountComponentAtNode(div);
-// });
+// })
