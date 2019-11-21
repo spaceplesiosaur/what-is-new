@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should match the snapshot with correct data 1`] = `
+<section
+  className="menuContainer"
+>
+  <h1
+    className="menuHeader"
+  >
+    What's New?
+  </h1>
+  <ul>
+    <li
+      className="menuCategory"
+      key="0"
+      onClick={[Function]}
+    >
+      <img
+        alt="menu icon"
+        className="menuItemImage"
+      />
+      <p
+        className="menuItemName"
+      />
+    </li>
+  </ul>
+</section>
+`;
