@@ -30,13 +30,24 @@ class App extends Component {
     this.setState({topic: topicId})
   }
 
+  filterArticles = (search) => {
+     const filteredTopic = [...this.state.topic].filter(article => {
+      return article.headline.includes(search) ||
+      article.description.includes(search);
+    })
+    this.setState({topic: filteredTopic})
+  }
+
   render () {
     return (
       <div className="app">
-        <SearchForm/>
         <Menu
         menuItems={this.state.menu}
-        setTopic={this.setTopic}/>
+        setTopic={this.setTopic}
+        />
+        <SearchForm
+        filterArticles={this.filterArticles}
+        />
         <NewsContainer
         articleList={this.state.topic}
         />
