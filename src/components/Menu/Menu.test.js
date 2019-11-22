@@ -10,4 +10,33 @@ describe('Menu', () => {
     />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should call setTopic with the right ID', () => {
+    const mockMenu = [{
+        name: 'Entertainment',
+        image: '/favicon.ico',
+        id: 'mockArticlesentertainment'
+      },
+      {
+        name: 'Health',
+        image: '/favicon.ico',
+        id: 'mockArticleshealth'
+      },
+      {
+        name: 'Local News',
+        image: '/favicon.ico',
+        id: 'mockArticleslocal'
+      },
+    ]
+    const setTopicMock = jest.fn()
+
+    const wrapper = shallow(<Menu
+    menuItems={mockMenu}
+    setTopic={setTopicMock}
+    />);
+
+    wrapper.find("#mockArticleslocal").simulate('click')
+
+    expect(setTopicMock).toHaveBeenCalledWith('mockArticleslocal')
+  })
 });

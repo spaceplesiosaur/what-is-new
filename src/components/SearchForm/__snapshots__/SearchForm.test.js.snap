@@ -11,6 +11,7 @@ exports[`SearchForm should match the snapshot with correct data 1`] = `
   />
   <button
     onClick={[Function]}
+    tabIndex="0"
   >
     Search
   </button>

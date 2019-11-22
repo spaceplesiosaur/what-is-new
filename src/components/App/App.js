@@ -13,17 +13,9 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      // data: {},
+  
       topic: [],
-      // topic: local,
-      // menu:
-      //   [
-      //     {name: 'Local News', image: '/favicon.ico', id: local},
-      //     {name: 'Technology', image: '/favicon.ico', id: technology},
-      //     {name: 'Entertainment', image: '/favicon.ico', id: entertainment},
-      //     {name: 'Science', image: '/favicon.ico', id: science},
-      //     {name: 'Health', image: '/favicon.ico', id: health}
-      //   ]
+
       menu:
         [
           {name: 'Entertainment', image: '/favicon.ico', id: []},
