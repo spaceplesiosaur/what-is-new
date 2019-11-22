@@ -3,12 +3,9 @@ import './NewsContainer.css'
 import NewsArticle from '../NewsArticle/NewsArticle.js';
 
 class NewsContainer extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+
   renderNewsArticles() {
-    // console.log(this.props.articleList)
-    // return null
+
     return this.props.articleList.map((article, i) => {
       return (
         <NewsArticle
