@@ -1,9 +1,8 @@
 .articleBlock {
   display: flex;
   flex-direction: column;
-  /* width: 20%;
-  height: 20%; */
   width: 400px;
+  margin: 10px;
 }
 
 .articlePic {
@@ -14,10 +13,14 @@
 .articleHeader {
   background-color: white;
   font-weight: bold;
+  height: 75px;
+  padding: 1.5em 0 1em 0;
 }
 
 .articleDescription {
   background-color: white;
+  height: 100px;
+  overflow: scroll;
 }
 
 .articleUrl {

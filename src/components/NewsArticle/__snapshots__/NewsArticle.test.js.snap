@@ -6,7 +6,7 @@ exports[`NewsArticle should match the snapshot with correct data 1`] = `
   id="test"
 >
   <img
-    alt="specific image"
+    alt="unique"
     className="articlePic"
     src="test"
   />

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Menu.css'
+import { FaBeer } from 'react-icons/fa';
 
 const Menu = (props) => {
   const menuOptions = props.menuItems
@@ -7,7 +8,7 @@ const Menu = (props) => {
     const topicPicker = () => props.setTopic(item.id)
     return (
         <li className="menuCategory" key={i} id={item.id} onClick={topicPicker}>
-          <img className="menuItemImage" alt="menu icon" src={item.pic}/>
+          <img className="menuItemImage" alt="menu icon" src={item.image}/>
           <p className="menuItemName">{item.name}</p>
         </li>
       )

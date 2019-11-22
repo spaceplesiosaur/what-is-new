@@ -36,11 +36,14 @@ exports[`App should render app 1`] = `
     }
     setTopic={[Function]}
   />
+   
   <SearchForm
     filterArticles={[Function]}
   />
+   
   <NewsContainer
     articleList={Array []}
   />
+   
 </div>
 `;

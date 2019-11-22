@@ -4,7 +4,8 @@ import React, {
 import './App.css';
 import SearchForm from '../SearchForm/SearchForm.js';
 import Menu from '../Menu/Menu.js';
-import NewsContainer from '../NewsContainer/NewsContainer.js'
+import NewsContainer from '../NewsContainer/NewsContainer.js';
+//ALL IMAGES ARE FROM fontawesome.com
 
 class App extends Component {
   constructor() {
@@ -15,27 +16,27 @@ class App extends Component {
 
       menu: [{
           name: 'Entertainment',
-          image: '/favicon.ico',
+          image: '/film-solid.png',
           id: []
         },
         {
           name: 'Health',
-          image: '/favicon.ico',
+          image: '/heart-solid.png',
           id: []
         },
         {
           name: 'Local News',
-          image: '/favicon.ico',
+          image: '/map-marker-alt-solid.png',
           id: []
         },
         {
           name: 'Science',
-          image: '/favicon.ico',
+          image: '/atom-solid.png',
           id: []
         },
         {
           name: 'Technology',
-          image: '/favicon.ico',
+          image: '/cogs-solid.png',
           id: []
         }
       ]
@@ -73,25 +74,21 @@ class App extends Component {
   }
 
   render() {
-    return ( <
-      div className = "app" >
-      <
-      Menu menuItems = {
-        this.state.menu
-      }
-      setTopic = {
-        this.setTopic
-      }
-      /> <
-      SearchForm filterArticles = {
-        this.filterArticles
-      }
-      /> <
-      NewsContainer articleList = {
-        this.state.topic
-      }
-      /> <
-      /div>
+    return (
+      <div className="app" >
+        <Menu
+          menuItems={this.state.menu}
+          setTopic={this.setTopic}
+        />
+        <section className="main">
+          <SearchForm
+          filterArticles={this.filterArticles}
+          />
+          <NewsContainer
+          articleList={this.state.topic}
+          />
+        </section>
+      </div>
     );
   }
 }

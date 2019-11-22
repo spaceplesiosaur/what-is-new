@@ -20,7 +20,7 @@ class SearchForm extends React.Component {
     return (
       <section className="navBar">
         <input type="text" className="searchBox" onChange={event => this.updateInput(event)}/>
-        <button onClick={this.filterStories} tabIndex="0">Search</button>
+        <button onClick={this.filterStories} tabIndex="0">Search Articles</button>
       </section>
     )
   }
