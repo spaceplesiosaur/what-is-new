@@ -11,9 +11,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-
       topic: [],
-
       menu: [{
           name: 'Entertainment',
           image: '/film-solid.png',
@@ -40,7 +38,6 @@ class App extends Component {
           id: []
         }
       ]
-
     }
   }
   componentDidMount = () => {
@@ -65,8 +62,8 @@ class App extends Component {
 
   filterArticles = (search) => {
     const filteredTopic = [...this.state.topic].filter(article => {
-      return article.headline.includes(search) ||
-        article.description.includes(search);
+      return article.headline.toUpperCase().includes(search.toUpperCase()) ||
+        article.description.toUpperCase().includes(search.toUpperCase());
     })
     this.setState({
       topic: filteredTopic

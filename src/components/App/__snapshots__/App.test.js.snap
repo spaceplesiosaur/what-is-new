@@ -9,41 +9,42 @@ exports[`App should render app 1`] = `
       Array [
         Object {
           "id": Array [],
-          "image": "/favicon.ico",
+          "image": "/film-solid.png",
           "name": "Entertainment",
         },
         Object {
           "id": Array [],
-          "image": "/favicon.ico",
+          "image": "/heart-solid.png",
           "name": "Health",
         },
         Object {
           "id": Array [],
-          "image": "/favicon.ico",
+          "image": "/map-marker-alt-solid.png",
           "name": "Local News",
         },
         Object {
           "id": Array [],
-          "image": "/favicon.ico",
+          "image": "/atom-solid.png",
           "name": "Science",
         },
         Object {
           "id": Array [],
-          "image": "/favicon.ico",
+          "image": "/cogs-solid.png",
           "name": "Technology",
         },
       ]
     }
     setTopic={[Function]}
   />
-   
-  <SearchForm
-    filterArticles={[Function]}
-  />
-   
-  <NewsContainer
-    articleList={Array []}
-  />
-   
+  <section
+    className="main"
+  >
+    <SearchForm
+      filterArticles={[Function]}
+    />
+    <NewsContainer
+      articleList={Array []}
+    />
+  </section>
 </div>
 `;

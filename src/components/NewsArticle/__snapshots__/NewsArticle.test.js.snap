@@ -24,7 +24,7 @@ exports[`NewsArticle should match the snapshot with correct data 1`] = `
     className="articleUrl"
     href="test"
   >
-    Link
+    See more...
   </a>
 </section>
 `;

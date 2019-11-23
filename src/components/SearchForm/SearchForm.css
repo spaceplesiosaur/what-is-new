@@ -1,8 +1,7 @@
 .navBar {
   text-align: right;
   margin-bottom: 3em;
-  background-color: pink;
-  /* width: 79em; */
+  background-color: #F4CC45;
   width: 100%;
 }
 
@@ -19,4 +18,6 @@ button {
   margin: 1em 2em 1em 0;
   /* font-size: 1em; */
   font-weight: bold;
+  background-color: #554589;
+  color: #F7EB89;
 }

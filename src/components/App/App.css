@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
 .app {
   display: flex;
-  background: #141527;
+  background: #030D4D;
   height: 100vh;
   text-align: center;
   width: 100%;
@@ -15,4 +16,5 @@
 .main {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }

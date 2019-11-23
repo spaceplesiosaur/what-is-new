@@ -1,6 +1,5 @@
 import React from 'react';
 import './Menu.css'
-import { FaBeer } from 'react-icons/fa';
 
 const Menu = (props) => {
   const menuOptions = props.menuItems

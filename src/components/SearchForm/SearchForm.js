@@ -12,8 +12,10 @@ class SearchForm extends React.Component {
     this.setState({searchInput: event.target.value})
   }
 
-  filterStories = (props) => {
-    this.props.filterArticles(this.state.searchInput);
+  filterStories = event => {
+    this.props.filterArticles(this.state.searchInput.toUpperCase());
+    event.target.previousSibling.value = ""
+    this.setState({searchInput: event.target.previousSibling.value})
   }
 
   render() {
