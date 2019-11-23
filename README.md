@@ -10,8 +10,6 @@ Clone the repo. Run npm install to ensure all dependencies are running. Enjoy!
 
 Build a React App that displays different categories of current news.
 
-![what's new screenshot](./screenshots/whats-new.png)
-
 - [x] Create components and learn to pass info between them.
 - [x] Create a NewsArticle component for Local News that displays the image, the headline, the description, and the url.
 - [x] In NewsContainer component, create NewsArticle cards that have the information each needs to display properly.
@@ -19,17 +17,7 @@ Build a React App that displays different categories of current news.
 - [x] Create a Menu component that has navigation to display the different news articles.
 - [x] Add in the functionality so that a user can search through the news articles
 - [x] Refactor so that app uses the Fetch API to get the data
-- [x] Fully test JSX, methods, and state changes using enzyme
-
-## Table of contents
-* [General Info](#Lynne's-Dog-Party)
-* [Motivation](#Motivation)
-* [Built With](#Built-With) 
-* [Screenshots](#Screenshots)
-* [How to Use](#How-to-Use)
-* [Tests](#Tests)
-* [Setup](#Setup)
-* [License](#License)
+- [x] Fully test JSX, methods, and state changes using enzyme 
 
 ## Learning Goals
 
@@ -45,14 +33,11 @@ Build a React App that displays different categories of current news.
 - JavaScript
 - React
 
+## Demo
+
+![What is new app](https://i.makeagif.com/media/11-23-2019/vR-jSy.gif)
+
 Note: All menu icons are from fontawesome.com
-
-## Screenshots
-
-<img src="https://github.com/lynnerang/dog-party-website/blob/master/screenshots/Desktop.png" alt="Website screenshot on desktop">
-<img src="https://github.com/lynnerang/dog-party-website/blob/master/screenshots/Mobile1.png" alt="Top of website on mobile">
-<img src="https://github.com/lynnerang/dog-party-website/blob/master/screenshots/Mobile2.png" alt="Website columns on mobile">
-
 
 ## License
 
