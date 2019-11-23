@@ -45,6 +45,7 @@ Build a React App that displays different categories of current news.
 - JavaScript
 - React
 
+Note: All menu icons are from fontawesome.com
 
 ## Screenshots
 
